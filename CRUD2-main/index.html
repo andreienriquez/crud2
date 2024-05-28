@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD with Firebase</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>CRUD with Firebase</h2>
+      <hr />
+      <br />
+      <div class="form">
+        UniqueID: <input type="text" name="UniqueID" id="unique" /> <br /><br />
+        FirstName:&nbsp; <input type="text" name="firstname" id="firstName" /> <br /><br />
+        MiddleName:&nbsp; <input type="text" name="middlename" id="middlename" /> <br /><br />
+        SurName:&nbsp; <input type="text" name="surname" id="surname" /> <br /><br />
+        Address: <input type="text" name="address" id="address" /> <br /><br />
+        Email: <input type="text" name="Email" id="email" /> <br /><br />
+        <label>Gender</label> <select  id="gender"> <br>
+          <option value=""disable selected hidden>Please choose your Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+      </select>
+      </div>
+
+      <div class="buttons">
+        <button id="insert">Insert</button>
+        <button id="read">Read</button>
+        <button id="update">Update</button>
+        <button id="delete">Delete</button>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script src="./fireConfig.js"></script>
+
+    <script src="./myscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
